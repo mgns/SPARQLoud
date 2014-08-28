@@ -1,0 +1,8 @@
+PREFIX wiss: <http://example.org/wiss2014/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+wiss:feed1 wiss:query """SELECT ?p ?c WHERE { ?p a <http://dbpedia.org/ontology/Artist>. ?p <http://dbpedia.org/ontology/birthPlace> ?c. ?c <http://xmlns.com/foaf/0.1/name> \"York\"@en. } LIMIT 10""" ;
+  wiss:endpoint "http://dbpedia.org/sparql" ;
+  wiss:resultSetSize 25 ;
+  wiss:created "1977-01-01T00:00:00-02:00"^^xsd:dateTime ;
+  wiss:lastExecuted "1977-01-01T00:00:00-02:00"^^xsd:dateTime .

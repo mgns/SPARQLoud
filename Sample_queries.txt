@@ -1,0 +1,9 @@
+Give me all members of team Sharks
+select distinct ?names  where {<http://dbpedia.org/resource/Sharks> <http://xmlns.com/foaf/0.1/group>  ?members.
+?members <http://xmlns.com/foaf/0.1/name> ?names }
+
+Give me contact of George
+select distinct ?number  where {<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/phone>  ?number}
+
+Give me friends of Magnus
+select distinct ?friendsOfMagnus  where {<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/knows> ?friendsOfMagnus}

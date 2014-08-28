@@ -1,0 +1,45 @@
+<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/family_name> "Kastrinakis" .
+<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/givenname> "George" .
+<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/name> "George Kastrinakis" .
+<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/nick> "gkastro" .
+<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/phone> <tel:004917685678614> .
+<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/Dinesh> .
+<http://dbpedia.org/resource/George> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/Sahar> .
+<http://dbpedia.org/resource/George> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/Dinesh> <http://xmlns.com/foaf/0.1/family_name> "Reddy" .
+<http://dbpedia.org/resource/Dinesh> <http://xmlns.com/foaf/0.1/givenname> "Dinesh" .
+<http://dbpedia.org/resource/Dinesh> <http://xmlns.com/foaf/0.1/name> "Dinesh Reddy" .
+<http://dbpedia.org/resource/Dinesh> <http://xmlns.com/foaf/0.1/nick> "dinnu" .
+<http://dbpedia.org/resource/Dinesh> <http://xmlns.com/foaf/0.1/phone> <tel:004917685678615> .
+<http://dbpedia.org/resource/Dinesh> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/George> .
+<http://dbpedia.org/resource/Dinesh> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/Sahar> .
+<http://dbpedia.org/resource/Dinesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/Sahar> <http://xmlns.com/foaf/0.1/family_name> "Vahdati" .
+<http://dbpedia.org/resource/Sahar> <http://xmlns.com/foaf/0.1/givenname> "Sahar" .
+<http://dbpedia.org/resource/Sahar> <http://xmlns.com/foaf/0.1/name> "Sahar Vahdati" .
+<http://dbpedia.org/resource/Sahar> <http://xmlns.com/foaf/0.1/nick> "Saharh" .
+<http://dbpedia.org/resource/Sahar> <http://xmlns.com/foaf/0.1/phone> <tel:004917685678613> .
+<http://dbpedia.org/resource/Sahar> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/George> .
+<http://dbpedia.org/resource/Sahar> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/Dinesh> .
+<http://dbpedia.org/resource/Sahar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/family_name> "Knuth" .
+<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/givenname> "Magnus" .
+<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/name> "Magnus Knuth" .
+<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/nick> "Magnus" .
+<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/phone> <tel:004917685678612> .
+<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/George> .
+<http://dbpedia.org/resource/Magnus> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/Sahar> .
+<http://dbpedia.org/resource/Magnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/Anastasia> <http://xmlns.com/foaf/0.1/family_name> "Dimou" .
+<http://dbpedia.org/resource/Anastasia> <http://xmlns.com/foaf/0.1/givenname> "Anastasia" .
+<http://dbpedia.org/resource/Anastasia> <http://xmlns.com/foaf/0.1/name> "Anastasia Dimou" .
+<http://dbpedia.org/resource/Anastasia> <http://xmlns.com/foaf/0.1/nick> "Anastasia" .
+<http://dbpedia.org/resource/Anastasia> <http://xmlns.com/foaf/0.1/phone> <tel:004917685678611> .
+<http://dbpedia.org/resource/Anastasia> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/George> .
+<http://dbpedia.org/resource/Anastasia> <http://xmlns.com/foaf/0.1/knows> <http://dbpedia.org/resource/Dinesh> .
+<http://dbpedia.org/resource/Anastasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://dbpedia.org/resource/Sharks> <http://xmlns.com/foaf/0.1/group> <http://dbpedia.org/resource/Dinesh> .
+<http://dbpedia.org/resource/Sharks> <http://xmlns.com/foaf/0.1/group> <http://dbpedia.org/resource/Magnus> .
+<http://dbpedia.org/resource/Sharks> <http://xmlns.com/foaf/0.1/group> <http://dbpedia.org/resource/Sahar> .
+<http://dbpedia.org/resource/Sharks> <http://xmlns.com/foaf/0.1/group> <http://dbpedia.org/resource/Anastasia> .
+<http://dbpedia.org/resource/Sharks> <http://xmlns.com/foaf/0.1/group> <http://dbpedia.org/resource/George> .

@@ -1,0 +1,11 @@
+<http://example.org/wiss2014/0.1/feed/Q4651f1619b15a1735ef5db00f4b8b3c2> <http://example.org/wiss2014/0.1/resultSetSize> "23"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/wiss2014/0.1/feed1> <http://example.org/wiss2014/0.1/query> "SELECT ?p ?c WHERE { ?p a <http://dbpedia.org/ontology/Artist>. ?p <http://dbpedia.org/ontology/birthPlace> ?c. ?c <http://xmlns.com/foaf/0.1/name> \"York\"@en. } LIMIT 10" .
+<http://example.org/wiss2014/0.1/feed1> <http://example.org/wiss2014/0.1/created> "1977-01-01T00:00:00-02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://example.org/wiss2014/0.1/feed1> <http://example.org/wiss2014/0.1/lastExecuted> "1977-01-01T00:00:00-02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://example.org/wiss2014/0.1/feed1> <http://example.org/wiss2014/0.1/endpoint> "http://dbpedia.org/sparql" .
+<http://example.org/wiss2014/0.1/feed/Q4651f1619b15a1735ef5db00f4b8b3c2> <http://example.org/wiss2014/0.1/query> "SELECT ?a WHERE {?a a <http://dbpedia.org/ontology/Person> .}" .
+<http://example.org/wiss2014/0.1/feed1> <http://example.org/wiss2014/0.1/resultSetSize> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/wiss2014/0.1/feed/Q4651f1619b15a1735ef5db00f4b8b3c2> <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-28T23:10:07" .
+<http://example.org/wiss2014/0.1/feed/Q4651f1619b15a1735ef5db00f4b8b3c2> <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-28T23:08:13" .
+<http://example.org/wiss2014/0.1/feed/Q4651f1619b15a1735ef5db00f4b8b3c2> <http://example.org/wiss2014/0.1/endpoint> "http://dbpedia.org/sparql" .
+

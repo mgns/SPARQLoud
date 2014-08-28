@@ -1,0 +1,6 @@
+_:N2889a755cca04a989020555e6a8e16ab <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-28T23:53:15" .
+_:N2889a755cca04a989020555e6a8e16ab <http://example.org/wiss2014/0.1/resultSetSize> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
+<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/endpoint> "test.n3" .
+<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/feed> _:N2889a755cca04a989020555e6a8e16ab .
+

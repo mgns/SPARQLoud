@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+
+    <body>
+        <h1>Form</h1>
+
+        <form id="query_form" method="post">
+            <label class="grey" for="log">SPARQL Endpoint</label><br />
+            <input type="text" name="endpoint" style="width:99%" id="endpoint"><br>
+            <label class="grey" for="log">Graph</label><br />
+            <input type="text" name="graph" style="width:99%" id="graph"><br />
+            <label class="grey" for="log">Type a SPARQL query:</label><br />
+            <textarea name="query" style="width:99%" id="query"></textarea><br />
+            <label>
+            <input type="submit" id="submitbtn" name="submit" value="SUBMIT" class="button"><br />
+            {% raw xsrf_form_html() %}
+        </form>
+    </body>
+</html>
