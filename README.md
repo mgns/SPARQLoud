@@ -19,5 +19,5 @@ pip install -r requirements.txt
 python app.py
 
 ### Web UI
-http://localhost:8888/form
-http://localhost:8888/feeds
+ * http://localhost:8888/form
+ * http://localhost:8888/feeds
