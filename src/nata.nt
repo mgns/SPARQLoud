@@ -1,32 +1,41 @@
-_:N3a01f09aa62045d8921becf31c226e32 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:49:35" .
-_:Nfed166153c304b92809f27c5c4e7e968 <http://example.org/wiss2014/0.1/resultSetSize> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:N2d5cdee58fb947cd8669ca306980a74d <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://example.org/wiss2014/0.1/feed/Qae6adf3e1451076e619cffdbf3f0c753> <http://example.org/wiss2014/0.1/endpoint> "http://live.dbpedia.org/sparql" .
-<http://example.org/wiss2014/0.1/feed/Qcde60db617a49864942e4de468f36581> <http://example.org/wiss2014/0.1/endpoint> "http://live.dbpedia.org/sparql" .
 <http://example.org/wiss2014/0.1/feed/Q4f0ad9da3449a93e5c544e1efad7b225> <http://example.org/wiss2014/0.1/query> "SELECT ?b WHERE {?b a <http://dbpedia.org/ontology/City>}" .
-_:N12095e0f2cee4bb7b1fdd60b9f8a9209 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:34:44" .
-<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/endpoint> "test.nt" .
-<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:N12095e0f2cee4bb7b1fdd60b9f8a9209 .
+_:N8ffd56766f79414eba77ec43e1cfcb5e <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:54:20" .
 <http://example.org/wiss2014/0.1/feed/Qcde60db617a49864942e4de468f36581> <http://example.org/wiss2014/0.1/query> "SELECT ?x WHERE {?x a <http://dbpedia.org/ontology/Automobile>}" .
-<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
-<http://example.org/wiss2014/0.1/feed/Q4f0ad9da3449a93e5c544e1efad7b225> <http://example.org/wiss2014/0.1/endpoint> "http://live.dbpedia.org/sparql" .
-_:N89b829d09cb24b6d91d60a4ad7577894 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:46:58" .
-<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:N2d5cdee58fb947cd8669ca306980a74d .
-_:N3a01f09aa62045d8921becf31c226e32 <http://example.org/wiss2014/0.1/resultSetSize> "19240" .
-<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/feed> _:N43323c4cc5524de098a36df44a09dc24 .
-<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:Nfed166153c304b92809f27c5c4e7e968 .
-<http://example.org/wiss2014/0.1/feed/Qcde60db617a49864942e4de468f36581> <http://example.org/wiss2014/0.1/feed> _:N61a86c31ef5644e8b2755c16b772fc85 .
-_:N12095e0f2cee4bb7b1fdd60b9f8a9209 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/endpoint> "test.n3" .
-<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
-_:N89b829d09cb24b6d91d60a4ad7577894 <http://example.org/wiss2014/0.1/resultSetSize> "19240" .
+<http://example.org/wiss2014/0.1/feed/Qcde60db617a49864942e4de468f36581> <http://example.org/wiss2014/0.1/feed> _:N74a36008d29b4d679363f539571f97bd .
+_:N12f36424d4e54ac889ae4e499a4c45af <http://example.org/wiss2014/0.1/resultSetSize> "19240" .
+_:N74a36008d29b4d679363f539571f97bd <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:44:06" .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:N7482e6eb9eb14b3791ec5e00b08596da .
+_:Ncd254a15f87a4953b421a5e30d2dc2cc <http://example.org/wiss2014/0.1/resultSetSize> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/wiss2014/0.1/feed/Q4f0ad9da3449a93e5c544e1efad7b225> <http://example.org/wiss2014/0.1/feed> _:N659b689537eb4305a27f225e217a7198 .
+_:N38d8224cd4f344b39f032d489e5f9637 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:34:44" .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:Ncd254a15f87a4953b421a5e30d2dc2cc .
+_:N8ffd56766f79414eba77ec43e1cfcb5e <http://example.org/wiss2014/0.1/resultSetSize> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:Nd6f0358229064b2299a05c3e6d833f0c <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T03:20:59" .
+_:Nd6f0358229064b2299a05c3e6d833f0c <http://example.org/wiss2014/0.1/resultSetSize> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:N7482e6eb9eb14b3791ec5e00b08596da <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:Nd6f0358229064b2299a05c3e6d833f0c .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/endpoint> "test.nt" .
 <http://example.org/wiss2014/0.1/feed/Qae6adf3e1451076e619cffdbf3f0c753> <http://example.org/wiss2014/0.1/query> "SELECT ?x WHERE {?x a <http://dbpedia.org/ontology/City>}" .
-_:N43323c4cc5524de098a36df44a09dc24 <http://example.org/wiss2014/0.1/resultSetSize> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://example.org/wiss2014/0.1/feed/Qae6adf3e1451076e619cffdbf3f0c753> <http://example.org/wiss2014/0.1/feed> _:N89b829d09cb24b6d91d60a4ad7577894 .
-_:N61a86c31ef5644e8b2755c16b772fc85 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:44:06" .
-<http://example.org/wiss2014/0.1/feed/Q4f0ad9da3449a93e5c544e1efad7b225> <http://example.org/wiss2014/0.1/feed> _:N3a01f09aa62045d8921becf31c226e32 .
-_:Nfed166153c304b92809f27c5c4e7e968 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:54:20" .
-_:N2d5cdee58fb947cd8669ca306980a74d <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T03:05:51" .
-_:N43323c4cc5524de098a36df44a09dc24 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-28T23:53:15" .
-_:N61a86c31ef5644e8b2755c16b772fc85 <http://example.org/wiss2014/0.1/resultSetSize> "8004" .
+<http://example.org/wiss2014/0.1/feed/Qcde60db617a49864942e4de468f36581> <http://example.org/wiss2014/0.1/endpoint> "http://live.dbpedia.org/sparql" .
+_:N38d8224cd4f344b39f032d489e5f9637 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:N659b689537eb4305a27f225e217a7198 <http://example.org/wiss2014/0.1/resultSetSize> "19240" .
+_:N12f36424d4e54ac889ae4e499a4c45af <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:46:58" .
+<http://example.org/wiss2014/0.1/feed/Qae6adf3e1451076e619cffdbf3f0c753> <http://example.org/wiss2014/0.1/feed> _:N12f36424d4e54ac889ae4e499a4c45af .
+_:N659b689537eb4305a27f225e217a7198 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:49:35" .
+_:N17a1b730a6d44527ab7f64c4c87abc7a <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T03:24:39" .
+_:N3ee4aaf7ac3d43d3804edbfa7d678d23 <http://example.org/wiss2014/0.1/resultSetSize> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:N38d8224cd4f344b39f032d489e5f9637 .
+_:N3ee4aaf7ac3d43d3804edbfa7d678d23 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-28T23:53:15" .
+_:N74a36008d29b4d679363f539571f97bd <http://example.org/wiss2014/0.1/resultSetSize> "8004" .
+_:N7482e6eb9eb14b3791ec5e00b08596da <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T03:05:51" .
+_:N17a1b730a6d44527ab7f64c4c87abc7a <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:Nc82d339e453e47e888ce9f7301f47854 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:Nc82d339e453e47e888ce9f7301f47854 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T04:18:26" .
+<http://example.org/wiss2014/0.1/feed/Q4f0ad9da3449a93e5c544e1efad7b225> <http://example.org/wiss2014/0.1/endpoint> "http://live.dbpedia.org/sparql" .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:N17a1b730a6d44527ab7f64c4c87abc7a .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:Nc82d339e453e47e888ce9f7301f47854 .
+<http://example.org/wiss2014/0.1/feed/Qae6adf3e1451076e619cffdbf3f0c753> <http://example.org/wiss2014/0.1/endpoint> "http://live.dbpedia.org/sparql" .
+_:Ncd254a15f87a4953b421a5e30d2dc2cc <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T03:29:35" .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:N8ffd56766f79414eba77ec43e1cfcb5e .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
 

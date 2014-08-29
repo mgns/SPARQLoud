@@ -1,4 +1,4 @@
-# SparqlPuSH
+# SPARQLOud
 
 ## Requirements
  * Python 3.4

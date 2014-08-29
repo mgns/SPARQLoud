@@ -49,24 +49,20 @@ def query_rewrite(query):
 
 #executes the query and gets the number of current rows
 def sparqlquery(Query ,DataSetDescriptor):
- 
-    g = rdflib.Graph()
-    if DataSetDescriptor[0] == "h" :
-        sparql = SPARQLWrapper.SPARQLWrapper(DataSetDescriptor)
-        sparql.setQuery(Query)
-        sparql.setReturnFormat(SPARQLWrapper.JSON)
-        qres = sparql.query().convert()
-        for result in qres["results"]["bindings"]:
-            ResultRows = result["c"]["value"]
-        # g.parse(DataSetDescriptor)
-    else :
-    	#print Query
-        g.parse(DataSetDescriptor, format= rdflib.util.guess_format(DataSetDescriptor))
-        qres = g.query(Query)
-        for row in qres.result : res = row
-        ResultRows = res[0]
- 
-    return ResultRows
+	g = rdflib.Graph()
+	if DataSetDescriptor[0] == "h" :
+		sparql = SPARQLWrapper.SPARQLWrapper(DataSetDescriptor)
+		sparql.setQuery(Query)
+		sparql.setReturnFormat(SPARQLWrapper.JSON)
+		qres = sparql.query().convert()
+		for result in qres["results"]["bindings"]:
+			ResultRows = result["c"]["value"]
+	else :
+		g.parse(DataSetDescriptor, format= rdflib.util.guess_format(DataSetDescriptor))
+		qres = g.query(Query)
+		for row in qres.result : res = row
+		ResultRows = res[0]
+	return ResultRows
 
 def store(query, uri, resultSetSize):
 	WISS = Namespace("http://example.org/wiss2014/0.1/")
@@ -128,14 +124,16 @@ def getResultSizeSet(query, uri):
 		return res["result"]
 
 def getQueries():
+    logger = logging.getLogger('boilerplate.' + __name__)
+
     query = " SELECT ?feed ?query ?endpoint ?result"\
     " WHERE {"\
     " ?feed <http://example.org/wiss2014/0.1/query> ?query ;"\
     "       <http://example.org/wiss2014/0.1/endpoint> ?endpoint ;"\
-    "       <http://example.org/wiss2014/0.1/resultSetSize> ?result ;"\
+    "       <http://example.org/wiss2014/0.1/feed> ?bn ."\
+    " ?bn   <http://example.org/wiss2014/0.1/resultSetSize> ?result ;"\
     "       <http://example.org/wiss2014/0.1/lastExecuted> ?executed . }"
  #   print "query " + query
- 
     g = rdflib.Graph()
     g.parse(feed_uri, format="nt")
  
@@ -148,17 +146,18 @@ def getQueries():
         results.append(result)
 
  #   print results
-
     return results
 
 
-def CheckUpdates ():
-    Timer(10,check_updates, ()).start()
+def CheckUpdates():
+    Timer(10,check_updates,()).start()
     return 0
 
-def check_updates ():
-	getQueries()
+def check_updates():
+	queries = getQueries()
+	for q in queries:
+		controller(q["query"], q["endpoint"])
 #	print "oti nanai \n"
 
 #controller(query, uri)
-#CheckUpdates ()
+CheckUpdates()

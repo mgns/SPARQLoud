@@ -19,7 +19,7 @@ class FeedListHandler(BaseHandler):
 
 		g = rdflib.Graph()
 		g.parse(file, format="nt")
-
+		
 		queryQueryRes = g.query(queryQuery)
 
 		feeds = []
