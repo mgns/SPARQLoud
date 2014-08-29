@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Feedlist</title>
+    </head>
+
+    <body>
+        <h1>Feedlist</h1>
+
+        <ul>
+        {% for feed in feeds %}
+            <li><a href="{{ feed['feed'] }}">Feed</a> for Query <span class="query">{{ feed['query'] }}</span> on {{ feed['endpoint'] }}</li>
+        {% end %}
+        </ul>
+    </body>
+</html>
