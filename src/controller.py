@@ -7,8 +7,9 @@ from threading import Timer
 
 query = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }"
 
-uri = "/home/andimou/Documents/WISS/hackathlon/test.nt"
-feed_uri = "/home/andimou/Documents/WISS/hackathlon/nata.nt"
+uri = "test.nt"
+feed_uri = "nata.nt"
+
 total_feed = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE {?s a wiss:Feed}"
 check_query = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE { ?s wiss:query \"" + query + "\" ; wiss:endpoint \"" + uri + "\".}"
 
@@ -47,22 +48,20 @@ def query_rewrite(query):
 
 #executes the query and gets the number of current rows
 def sparqlquery(Query ,DataSetDescriptor):
-	print "query " + Query
 	g = rdflib.Graph()
 	if DataSetDescriptor[0] == "h" :
 		sparql = SPARQLWrapper.SPARQLWrapper(DataSetDescriptor)
-		sparql.setQuery(Query)
-		sparql.setReturnFormat(SPARQLWrapper.JSON)
-		qres = sparql.query().convert()
-		for result in qres["results"]["bindings"]:
-			ResultRows = result["c"]["value"]
-	else:
-		g.parse(DataSetDescriptor, format= rdflib.util.guess_format(DataSetDescriptor))
-		qres = g.query(Query)
-		for row in qres.result : res = row
-		ResultRows = res[0]
+        	sparql.setQuery(Query)
+        	sparql.setReturnFormat(SPARQLWrapper.JSON)
+        	qres = sparql.query().convert()
+        	for result in qres["results"]["bindings"]:
+            		ResultRows = result["c"]["value"]
+        else :
+	    g.parse(DataSetDescriptor, format= rdflib.util.guess_format(DataSetDescriptor))
+        qres = g.query(Query)
+        for row in qres.result : res = row
+        ResultRows = res[0]
 	return ResultRows
-
 
 def store(query, uri, resultSetSize):
 	WISS = Namespace("http://example.org/wiss2014/0.1/")
