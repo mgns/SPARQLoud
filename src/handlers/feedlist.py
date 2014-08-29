@@ -13,7 +13,7 @@ class FeedListHandler(BaseHandler):
 
 		queryQuery = "PREFIX wiss: <http://example.org/wiss2014/0.1/> "\
 			" SELECT ?feed ?query ?endpoint"\
-			" WHERE {?feed wiss:query ?query ; wiss:endpoint ?endpoint . }"
+			" WHERE {?feed wiss:query ?query ; wiss:endpoint ?endpoint . } ORDER BY ?feed"
 
 		#logging.info(query)
 

@@ -5,12 +5,13 @@ from datetime import datetime
 from threading import Timer
 
 
-query = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }"
+#query = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }"
 
 uri = "test.nt"
 feed_uri = "nata.nt"
+
 total_feed = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE {?s a wiss:Feed}"
-check_query = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE { ?s wiss:query \"" + query + "\" ; wiss:endpoint \"" + uri + "\".}"
+#check_query = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE { ?s wiss:query \"" + query + "\" ; wiss:endpoint \"" + uri + "\".}"
 
 #the controller is triggered by the from and the sheduler
 #query -> the query the user wants to execute
@@ -18,31 +19,32 @@ check_query = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DIS
 def controller(query, uri):
 	rs_prior_number = int(0)
 	#calls the sparql.py to execute the query and retrieves the new results
-	rs_number = sparqlquery(query, uri)
-	print "current number " + str(rs_number)
+	rs_number = sparqlquery(query_rewrite(query), uri)
+	print("current number " + str(rs_number))
 
 	#checks if the feed is already in the data.ttl
+	check_query = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE { ?s wiss:query \"" + query + "\" ; wiss:endpoint \"" + uri + "\".}"
 	check_query_num = sparqlquery(check_query, feed_uri)
-	print "check query number " + str(check_query_num)
+	print("check query number " + str(check_query_num))
 
 	if int(check_query_num) == int(0):
-		print "stores new query"
+		print("stores new query " + query)
 		store(query, uri, rs_number)
 	else:
-		print "compares with the registry"
+#		print "compares with the registry"
 		#if yes retrieves the existing number and compares
 		rs_prior_number = getResultSizeSet(query, uri)
-		print "prior number " + str(rs_prior_number)
+#		print "prior number " + str(rs_prior_number)
 
 		if(int(rs_number) != int(rs_prior_number)):
 			store(query, uri, rs_number)
-			print "notification sent"
+#			print "notification sent"
 		#send notification
 
 #rewrites the query to write the results
 def query_rewrite(query):
 	count_query = re.sub(r"SELECT ([^{])+", r"SELECT (COUNT(*) AS ?c) WHERE ", query, flags=re.I)
-	#print count_query
+	print("rewrite query to " + count_query)
 	return count_query
 
 #executes the query and gets the number of current rows
@@ -132,7 +134,7 @@ def getQueries():
     "       <http://example.org/wiss2014/0.1/endpoint> ?endpoint ;"\
     "       <http://example.org/wiss2014/0.1/resultSetSize> ?result ;"\
     "       <http://example.org/wiss2014/0.1/lastExecuted> ?executed . }"
-    print "query " + query
+ #   print "query " + query
  
     g = rdflib.Graph()
     g.parse(feed_uri, format="nt")
@@ -145,7 +147,7 @@ def getQueries():
         result = {"qid" : row["feed"], "query" : row["query"], "endpoint" : row["endpoint"], "result" : row["result"]}
         results.append(result)
 
-    print results
+ #   print results
 
     return results
 
@@ -156,7 +158,7 @@ def CheckUpdates ():
 
 def check_updates ():
 	getQueries()
-	print "oti nanai \n"
+#	print "oti nanai \n"
 
-controller(query, uri)
-CheckUpdates ()
+#controller(query, uri)
+#CheckUpdates ()
