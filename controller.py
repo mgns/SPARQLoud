@@ -2,10 +2,12 @@ import rdflib, SPARQLWrapper
 from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
 import re, time, hashlib, urllib, datetime, logging
 from datetime import datetime
+from threading import Timer
+
 
 query = "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }"
 
-uri = "test.n3"
+uri = "test.nt"
 feed_uri = "nata.nt"
 total_feed = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE {?s a wiss:Feed}"
 check_query = "PREFIX wiss: <http://example.org/wiss2014/0.1/> SELECT (COUNT(DISTINCT ?s) AS ?c) WHERE { ?s wiss:query \"" + query + "\" ; wiss:endpoint \"" + uri + "\".}"
@@ -130,9 +132,10 @@ def getQueries():
     "       <http://example.org/wiss2014/0.1/endpoint> ?endpoint ;"\
     "       <http://example.org/wiss2014/0.1/resultSetSize> ?result ;"\
     "       <http://example.org/wiss2014/0.1/lastExecuted> ?executed . }"
+    print "query " + query
  
     g = rdflib.Graph()
-    g.parse(file, format="nt")
+    g.parse(feed_uri, format="nt")
  
     results = []
  
@@ -142,7 +145,18 @@ def getQueries():
         result = {"qid" : row["feed"], "query" : row["query"], "endpoint" : row["endpoint"], "result" : row["result"]}
         results.append(result)
 
+    print results
+
     return results
 
 
+def CheckUpdates ():
+    Timer(10,check_updates, ()).start()
+    return 0
+
+def check_updates ():
+	getQueries()
+	print "oti nanai \n"
+
 controller(query, uri)
+CheckUpdates ()
