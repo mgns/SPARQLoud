@@ -1,4 +1,4 @@
-# SPARQLOud
+#![SPARQLOud](logo.png "SPARQLoud")
 
 ## Requirements
  * Python 3.4
