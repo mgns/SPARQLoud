@@ -1,20 +1,25 @@
-_:Nc189b1503ca64b5b8ad960db8a773e89 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:46:25" .
-_:Nc189b1503ca64b5b8ad960db8a773e89 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/feed> _:N17f84d8e66154dc5aadc6cbd13aea72a .
+_:Nf770976626dc4b2e87254cf2ab3644ce <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:Nf770976626dc4b2e87254cf2ab3644ce <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T03:00:04" .
+<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:N719f1a31c0cf45109ec9c2aec00392b7 .
+<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/endpoint> "/home/andimou/Documents/WISS/hackathlon/test.nt" .
+<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
+<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:Nf78ab57e0988423b8daea0cdd423bdfc .
+<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:N41e16d39578c4e2da39cbd09e5ef6755 .
+<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:Nec8dcf1265734acea8333903eb6023eb .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/endpoint> "test.nt" .
+<http://example.org/wiss2014/0.1/feed/Qc8382db278017e18314e42db58fad4a5> <http://example.org/wiss2014/0.1/feed> _:Nf770976626dc4b2e87254cf2ab3644ce .
+_:N3591094443ef482a85de5a9eb5163cfc <http://example.org/wiss2014/0.1/resultSetSize> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:N3591094443ef482a85de5a9eb5163cfc <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-28T23:53:15" .
+<http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/feed> _:N3591094443ef482a85de5a9eb5163cfc .
 <http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
 <http://example.org/wiss2014/0.1/feed/Q4b44d608adc90c6ef58261922582b4c6> <http://example.org/wiss2014/0.1/endpoint> "test.n3" .
-_:N17f84d8e66154dc5aadc6cbd13aea72a <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-28T23:53:15" .
-_:N17f84d8e66154dc5aadc6cbd13aea72a <http://example.org/wiss2014/0.1/resultSetSize> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:N567e41047d58411fb1fe47f83b6f0c09 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:44:32" .
-_:N567e41047d58411fb1fe47f83b6f0c09 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:N0af1956947224f5680d1b486178b6066 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
-_:N0af1956947224f5680d1b486178b6066 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:36:23" .
-<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:N567e41047d58411fb1fe47f83b6f0c09 .
-<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/query> "PREFIX foaf: <http://xmlns.com/foaf/0.1/> SELECT (COUNT(?s) AS ?c) WHERE { ?s foaf:name ?names }" .
-<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:Nc521c1dc2688458f9d3dd4a96fe9d0e2 .
-<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:Nc189b1503ca64b5b8ad960db8a773e89 .
-<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/feed> _:N0af1956947224f5680d1b486178b6066 .
-<http://example.org/wiss2014/0.1/feed/Q5a443742fd0cff157d0395e8f5150058> <http://example.org/wiss2014/0.1/endpoint> "/home/andimou/Documents/WISS/hackathlon/test.nt" .
-_:Nc521c1dc2688458f9d3dd4a96fe9d0e2 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:50:18" .
-_:Nc521c1dc2688458f9d3dd4a96fe9d0e2 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:N719f1a31c0cf45109ec9c2aec00392b7 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:N719f1a31c0cf45109ec9c2aec00392b7 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:46:25" .
+_:Nf78ab57e0988423b8daea0cdd423bdfc <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:Nf78ab57e0988423b8daea0cdd423bdfc <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:44:32" .
+_:Nec8dcf1265734acea8333903eb6023eb <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:Nec8dcf1265734acea8333903eb6023eb <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:50:18" .
+_:N41e16d39578c4e2da39cbd09e5ef6755 <http://example.org/wiss2014/0.1/lastExecuted> "2014-08-29T02:36:23" .
+_:N41e16d39578c4e2da39cbd09e5ef6755 <http://example.org/wiss2014/0.1/resultSetSize> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
 
